@@ -1,6 +1,7 @@
 streamlit==1.38.0
 streamlit-browser-session-storage
 streamlit-local-storage
+streamlit-screen-stats
 pandas
 numpy
 matplotlib
