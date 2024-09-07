@@ -1,0 +1,62 @@
+from __init__ import WindowQuerySize, WindowQueryHelper
+# from st_screen_stats import WindowQuerySize, WindowQueryHelper
+import streamlit as st
+
+st.set_page_config(layout="wide")
+
+screenSizeInit = WindowQuerySize()
+result = screenSizeInit.mediaQueryT("(max-width: 700px)")
+st.write(result)
+
+screenSizeInitAlt = WindowQueryHelper(pause=1.5)
+# test_ = screenSizeInitAlt.maximum_window_size(max_width=800, default={"status":False}, key="window_1")
+# st.write("max_width",test_)
+test_ = screenSizeInitAlt.minimum_window_size(min_width=800, key="window_2", default={}) # default={"status":False}
+st.write("min_width",test_)
+
+if test_["status"] == False:
+    st.write("Hiya falsy")
+else:
+    st.write("Hiya Truthy")
+
+# test_ = screenSizeInitAlt.maximum_window_size_top(max_width=800, key="window_top_1")
+# st.write("max_width_top",test_)
+# test_ = screenSizeInitAlt.minimum_window_size_top(min_width=800, key="window_top_2")
+# st.write("min_width_top",test_)
+
+# testing_ = screenSizeInitAlt.window_top_range_width(min_width=1000, max_width=1100)
+# st.write("range", testing_)
+
+
+# # width_threshold = "max"
+# # value_ = 700
+
+# # result = f'"({width_threshold}-width: {value_}px)"'
+
+# # st.write(result)
+
+# # width_threshold = "min"
+# # value_2 = 900
+# # range_result = f'"({width_threshold}-width: {value_}px) and ({width_threshold}-width: {value_2}px)"'
+
+# # st.write(range_result)
+
+# # def single_width_query(measurement="max", threshold=700):
+
+# #     result = f"({measurement}-width: {threshold}px)"
+
+# #     return result
+
+# # st.write(single_width_query())
+
+
+# # def range_width_query(min_threshold=500, max_threshold=1000):
+
+# #     result = f'"(min-width: {min_threshold}px) and (max-width: {max_threshold}px)"'
+
+# #     return result
+
+# # st.write(range_width_query())
+
+
+

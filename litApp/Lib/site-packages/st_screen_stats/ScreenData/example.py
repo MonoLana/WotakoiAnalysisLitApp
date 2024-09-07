@@ -1,0 +1,8 @@
+import streamlit as st
+from __init__ import ScreenData
+
+st.set_page_config(layout="wide")
+
+screenD = ScreenData()
+result = screenD.st_screen_data_window_top()
+st.write(result)

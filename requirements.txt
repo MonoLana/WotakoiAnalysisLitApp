@@ -1,0 +1,10 @@
+streamlit==1.38.0
+streamlit-browser-session-storage
+streamlit-local-storage
+pandas
+numpy
+matplotlib
+plotly
+wordcloud
+scikit-learn
+seaborn
