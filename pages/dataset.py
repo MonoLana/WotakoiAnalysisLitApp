@@ -17,9 +17,3 @@ background-color: #10101C
 </style>
 """
 st.markdown(page_bg_color, unsafe_allow_html=True)
-
-st.markdown(
-    """
-    Hello this is home page!
-    """ 
-)
