@@ -63,4 +63,4 @@ i've already deployed the app using streamlit cloud, you can visit it at:
 
 [wotakoianalysislitapp.streamlit.app](https://wotakoianalysislitapp.streamlit.app/)
 
-soon i'll upload the raw data that i scrap from myanimelis website on kaggle
+this repo is still ongoging, soon i'll revision the visualization and pages and upload the raw user review dataset that i scrap from myAnimeList website to my kaggle
