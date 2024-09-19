@@ -3,9 +3,9 @@
 </div>
 
 <p align="center">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Wotakoi--Analysis-pink?style=for-the-badge&logo=streamlit&label=streamlitapp">
-  <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/MonoLana/WotakoiAnalysisLitApp?style=for-the-badge&logo=github&labelColor=black">
-  <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/streamlit?style=for-the-badge">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Wotakoi--Analysis-pink?style=flat-square&logo=streamlit&label=streamlitapp">
+  <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/MonoLana/WotakoiAnalysisLitApp?style=flat-square&logo=github&labelColor=black">
+  <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/streamlit?style=flat-square">
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/MonoLana?style=social">
 </p>
 
