@@ -33,25 +33,14 @@ background-color: #10101C
 """
 st.markdown(page_bg_color, unsafe_allow_html=True)
 
-# Scatter plot using Matplotlib
-plotFig = px.scatter_matrix(
-    df, dimensions=["subjectivity", "polarity"], color="sentiment"
-)
+# Bar Chart using Plotly
+plotFig = px.bar(df, x="sentiment", y="subjectivity", color="polarity")
 
-# Pie chart using Matplotlib
+# Pie chart using Plotly
 pieFig = px.pie(
     df,
     names="sentiment",
     title="Sentiment Distribution",
-)
-
-# Line plot using Matplotlib
-lineFig = px.line(
-    sorted_df,
-    x="subjectivity",
-    y="polarity",
-    color="sentiment",
-    title="Polarity over time",
 )
 
 # Correlation matrix using heatmap with plotly
@@ -75,13 +64,8 @@ ax.set_title("Word Cloud for Positive Sentiments")
 if is_screen_large["status"]:
     with st.container():
         # First row
-        col1, col2 = st.columns(2)
-        with col1:
-            st.subheader("Scatter Plot")
-            st.plotly_chart(plotFig)  # Scatter plot
-        with col2:
-            st.subheader("Line Plot")
-            st.plotly_chart(lineFig)  # Line Plot
+        st.subheader("Bar Chart")
+        st.plotly_chart(plotFig)  # Scatter plot
         # Second row
         col3, col4 = st.columns(2)
         with col3:
