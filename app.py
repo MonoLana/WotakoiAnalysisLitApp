@@ -34,7 +34,7 @@ background-color: #10101C
 st.markdown(page_bg_color, unsafe_allow_html=True)
 
 # Bar Chart using Plotly
-plotFig = px.bar(df, x="sentiment", y="subjectivity", color="polarity")
+barFig = px.bar(df, x="sentiment", y="subjectivity", color="polarity")
 
 # Pie chart using Plotly
 pieFig = px.pie(
@@ -65,7 +65,7 @@ if is_screen_large["status"]:
     with st.container():
         # First row
         st.subheader("Bar Chart")
-        st.plotly_chart(plotFig)  # Scatter plot
+        st.plotly_chart(barFig)  # Scatter plot
         # Second row
         col3, col4 = st.columns(2)
         with col3:
@@ -75,10 +75,8 @@ if is_screen_large["status"]:
             st.subheader("Heatmap")
             st.plotly_chart(heatmap)  # Heatmap
 else:
-    st.subheader("Scatter Plot")
-    st.plotly_chart(plotFig)
-    st.subheader("Line Plot")
-    st.plotly_chart(lineFig)
+    st.subheader("Bar Chart")
+    st.plotly_chart(barFig)
     st.subheader("Pie Chart")
     st.plotly_chart(pieFig)
     st.subheader("Heatmap")
